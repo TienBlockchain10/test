@@ -1,0 +1,64 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    border: none; /* Removes the default border */
+    color: white; /* Sets the text color to white */
+    padding: 15px 30px; /* Adjust padding to increase button size */
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 0.25rem;
+}
+
+#yesButton {
+    background-color: #4CAF50; /* Green background for the 'Yes' button */
+    border: #4CAF50
+}
+
+#yesButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border: #4CAF50
+}
+
+#noButton {
+    background-color: #f44336; /* Red background for the 'No' button */
+    border: #f44336
+}
+
+#noButton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    border: #d32f2f
+}
